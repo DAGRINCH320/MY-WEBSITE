@@ -1,0 +1,215 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Increased width to 90% */
+    max-width: 600px;
+}
+label {
+    font-size: 1em; 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input.editable {
+    font-size: 1em; 
+    padding: 10px; 
+    width: 100%; 
+    max-width: 500px; 
+    margin-bottom: 20px; 
+}
+
+textarea.editable {
+    width: 100%; /* Full width for the textarea */
+    max-width: 500px; /* Optional: max width for larger screens */
+    padding: 10px; /* Padding for textarea */
+    margin-bottom: 20px; /* Space between textarea and button */
+    resize: none; /* Prevent resizing */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    transform: translate(-50%, -50%);
+}
+
+.background-image {
+    background-image: url('css/edu.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute;
+    z-index: -1;
+}
+
+button {
+    display: flex;
+    gap: 20px;
+    color: rgb(247, 16, 120);
+    font-size: 1rem;
+    padding: 10px 30px;
+    background: rgb(142, 168, 167);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(147, 171, 175);
+    transition: 1s;
+    position: relative;
+    margin-top: 20px; /* Add this line to add space between the button and the form */
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px aqua;
+    animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 4; }
+}
+
+button:hover {
+    box-shadow: 0 0 5px aqua,
+    0 0 5px aqua, 0 0 5px aqua,
+    0 0 100px aqua;
+}
+
+.caption {
+    font-size: 2em; 
+    text-align: center;
+    color: rgb(247, 247, 252);
+    font-style: italic;
+    align-items: flex-end;
+}
+
+h2 {
+    text-align: center; 
+    font-size: 2em; 
+    color: rgb(25, 17, 20); 
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+h2:hover {
+    color: rgb(149, 184, 181); 
+}
+
+label {
+    font-size: 1em; 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input.editable {
+    font-size: 1em; 
+    padding: 10px; 
+    width: 100%; 
+    max-width: 500px; 
+    margin-bottom: 20px; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.register-button {
+    width: 100%; /* Full width for the Register button */
+    padding: 15px; /* Larger padding */
+    background-color: #28a745; /* Different background color for Register */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Make inputs take full width */
+    padding: 15px; /* More padding for larger input fields */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for the inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Font size for inputs */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Increased padding to 40px */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Increased width to 90% */
+    margin: 40px auto; /* Add some margin to center the form */
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
